@@ -1,0 +1,25 @@
+# Acme Robotics: two founders, a pool, three SAFEs, a note, then a seed round and a Series A.
+company Acme Robotics
+
+founder Ada 4,000,000
+founder Ben 4,000,000
+pool 1,000,000
+grant Dana 200,000 strike 0.10
+
+# Pre-seed on post-money SAFEs. YC's standard deal, an angel with a discount, a friend uncapped.
+safe YC     125,000 post-money-cap 1,875,000
+safe Angel  500,000 post-money-cap 8,000,000 discount 20%
+safe Friend  50,000 discount 25%
+
+# A convertible note from a family member.
+note Uncle 100,000 interest 6% cap 10,000,000 discount 20% issued 2025-01-15
+
+# Seed. Everything above converts here. The pool is topped up to 10% of the post-money.
+round Seed pre 12,000,000 raise 3,000,000 pool-to 10% pref 1x non-participating date 2026-03-01
+  investor Sequoia    2,000,000
+  investor Lightspeed 1,000,000
+
+# Series A, eighteen months later.
+round A pre 40,000,000 raise 10,000,000 pool-to 12% pref 1x participating cap 3x date 2027-09-01
+  investor a16z 7,000,000
+  investor Sequoia 3,000,000

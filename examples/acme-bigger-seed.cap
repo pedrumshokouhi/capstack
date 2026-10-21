@@ -1,0 +1,18 @@
+# The same company as acme.cap, with a $5M seed at the same pre-money and a 15% pool.
+# Run: capstack diff examples/acme.cap examples/acme-bigger-seed.cap --at Seed
+company Acme Robotics
+
+founder Ada 4,000,000
+founder Ben 4,000,000
+pool 1,000,000
+grant Dana 200,000 strike 0.10
+
+safe YC     125,000 post-money-cap 1,875,000
+safe Angel  500,000 post-money-cap 8,000,000 discount 20%
+safe Friend  50,000 discount 25%
+
+note Uncle 100,000 interest 6% cap 10,000,000 discount 20% issued 2025-01-15
+
+round Seed pre 12,000,000 raise 5,000,000 pool-to 15% pref 1x non-participating date 2026-03-01
+  investor Sequoia    3,000,000
+  investor Lightspeed 2,000,000

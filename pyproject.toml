@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capstack"
+version = "0.1.0"
+description = "Cap tables as code: SAFEs, notes, pools and priced rounds in a plain-text file you can diff."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Pedrum Shokouhi"}]
+keywords = ["cap-table", "safe", "convertible-note", "dilution", "waterfall", "startup", "equity"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Office/Business :: Financial",
+]
+
+[project.scripts]
+capstack = "capstack.cli:main"
+
+[tool.setuptools]
+packages = ["capstack"]
